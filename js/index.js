@@ -40,3 +40,36 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const headerImg = document.getElementById('cta-img');
+headerImg.src = 'img/header-img.png';
+
+const middleImg = document.getElementById('middle-img');
+middleImg.src = 'img/mid-page-accent.jpg';
+
+//nav
+const aTags = Array.from(document.querySelector('nav').children);
+aTags.forEach(function(element) {
+
+  element.textContent = 'nav Item';
+
+});
+
+const intro = document.querySelector('h1');
+intro.textContent = 'Dom Is Awesome';
+
+const btn = document.querySelector('button');
+btn.textContent = 'Get Started';
+
+const features = document.querySelector('h4');
+features.textContent = 'features';
+
+const featuresP = document.querySelector('p');
+featuresP.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+const footer = Array.from(document.querySelector('footer').children);
+footer.forEach(function(element) {
+
+  element.textContent = 'Copyright Great Idea! 2018';
+
+});
